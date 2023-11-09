@@ -9,7 +9,7 @@ export const Card = ({titulo,ruta, xp}) => {
                 <div className="border-solid border-2 border-[#2A2A2A] 
                                 hover:border-solid hover:border-2 hover:border-[#5257B3] 
                                 hover:duration-300 hover:scale-105 rounded-xl hover:rounded-xl">
-                    <img className="w-64 h-48 rounded-t-xl block max-w-full object-cover object-top" src={ruta} />
+                    <img className="w-64 h-48 rounded-t-xl block max-w-full object-cover objetc-top" src={ruta} />
                     <img className='ml-28 z-10 mt-[-3vh]' src={CardIcon} alt="" />
                     <div className="flex flex-col bg-[#131313] w-64 h-52 items-center rounded-b-xl gap-4">
                         <h2 className='text-[#FFFFFF] font-semibold text-3xl pt-2'>{titulo}</h2>
@@ -35,5 +35,5 @@ Card.propTypes = {
     titulo: PropTypes.string.isRequired,
     ruta: PropTypes.string.isRequired,
     xp: PropTypes.string.isRequired,
-     // Esto valida que 'titulo' sea una cadena y es obligatorio
+
 }
