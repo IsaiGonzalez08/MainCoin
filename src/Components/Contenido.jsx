@@ -12,7 +12,7 @@ import Contenido8 from '../assets/Img/ImgContenido8.png'
 export const Contenido = () => {
     return(
         <>
-            <div className="bg-[url('./assets/Img/Background3.png')] w-full h-[160vh] bg-no-repeat bg-cover overflow-hidden">
+            <div className="bg-[url('./assets/Img/Background3.png')] w-full h-[160vh] bg-no-repeat bg-cover overflow-hidden" id="contenido">
                 <div className="flex flex-row justify-start">
                     <h1 className="text-6xl pl-36">
                         <span className="text-[#FFFFFF] font-thin">Tops recompensas en los</span>

@@ -9,9 +9,12 @@ import { Card } from './Card'
 
 
 export const Nft = () => {
+
+    
+
     return(
        <>
-       <div className="bg-[#131313] w-full h-screen overflow-y-hidden overflow-hidden">
+       <div className="bg-[#131313] w-full h-screen overflow-y-hidden overflow-hidden" id='explora'>
             <div className="flex flex-row justify-around pt-52 pr-2 ml-20">
                 <div className='flex flex-row items-center'>
                     <div className="bg-[#5257B3] w-14 h-14 rounded-full absolute"></div>
