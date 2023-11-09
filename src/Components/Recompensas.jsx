@@ -1,5 +1,8 @@
 import { CardRecompensa } from "./CardRecompensa"
 import Recompensa1 from '../assets/Img/Recompensa1.png'
+import NFTHunter1 from '../assets/NFTs/NFT-Hunter-1.png'
+import NFTJudge1 from '../assets/NFTs/NFT-Jugde-1.png'
+import NFTAnimal1 from '../assets/NFTs/NFT-Animal-1.png'
 
 export const Recompensas = () => {
     return(
@@ -11,10 +14,9 @@ export const Recompensas = () => {
             </div>   
             <div className="flex flex-row w-[160vh] min-w-[158vh] h-[58vh] bg-[#D9D9D920] mt-5 pl-10 pr-10 gap-3 overflow-x-scroll overflow-y-hidden overflow-hidden">
                 <CardRecompensa img={Recompensa1} nombre="NightFuture" puntos="5 219.90" dinero="200,129,291.00"></CardRecompensa>
-                <CardRecompensa img={Recompensa1} nombre="NightFuture" puntos="5 219.90" dinero="200,129,291.00"></CardRecompensa>
-                <CardRecompensa img={Recompensa1} nombre="NightFuture" puntos="5 219.90" dinero="200,129,291.00"></CardRecompensa>
-                <CardRecompensa img={Recompensa1} nombre="NightFuture" puntos="5 219.90" dinero="200,129,291.00"></CardRecompensa>
-                <CardRecompensa img={Recompensa1} nombre="NightFuture" puntos="5 219.90" dinero="200,129,291.00"></CardRecompensa>
+                <CardRecompensa img={NFTHunter1} nombre="NightFuture" puntos="5 219.90" dinero="200,129,291.00"></CardRecompensa>
+                <CardRecompensa img={NFTJudge1} nombre="NightFuture" puntos="5 219.90" dinero="200,129,291.00"></CardRecompensa>
+                <CardRecompensa img={NFTAnimal1} nombre="NightFuture" puntos="5 219.90" dinero="200,129,291.00"></CardRecompensa>
             </div>
             <div className="flex flex-col justify-start pt-64 pr-2 ml-64">
                 <div className='flex flex-row items-center'>
