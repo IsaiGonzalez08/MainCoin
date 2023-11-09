@@ -1,10 +1,10 @@
-import { LandingPage } from "./Pages/LandingPage"
+import { AppRouter } from "./Router/AppRouter"
 
 
 export const App = () => {
   return (
     <>
-      <LandingPage/>
+      <AppRouter></AppRouter>
     </>
   )
 }
