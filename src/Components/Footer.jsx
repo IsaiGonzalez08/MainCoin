@@ -5,7 +5,7 @@ import Github from '../assets/Icon/GitHub.svg';
 
 export const Footer = () => {
     return(
-        <footer className="flex flex-row justify-between w-full h-36 overflow-hidden">
+        <footer className="flex flex-row justify-between w-full h-36 overflow-hidden bg-[#141414] items-center">
             <div className="flex flex-col items-end ml-32">
                 <div className="flex flex-row justify-around mr-10">
                     <div className="">

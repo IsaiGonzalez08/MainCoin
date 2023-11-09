@@ -4,9 +4,9 @@ import PropTypes from 'prop-types';
 
 export const CardRecompensa = ({img, nombre, puntos, dinero}) => {
     return(
-        <div className="w-[41.5vh] h-[52vh] flex flex-col border-2 border-[#000000] mt-[15px]">
-            <img className='w-[41.5] h-[40vh] object-cover objetc-center' src={img}/>
-            <div className="bg-[#FFFFFF] w-96 h-28">
+        <div className="w-[350px] h-[52vh] flex flex-col border-2 hover:border-[#5257B3] hover:duration-100 hover:scale-105 mt-[15px]">
+            <img className='w-[350px] h-[40vh] object-cover objetc-center' src={img}/>
+            <div className="bg-[#FFFFFF] w-[345px] h-28">
                 <div className="flex flex-row pl-4 pt-2">
                     <h2 className='font-bold text-3xl'>{nombre}</h2>
                     <img src={IconRecompensa} alt="" />
