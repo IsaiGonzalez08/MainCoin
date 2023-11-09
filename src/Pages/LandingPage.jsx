@@ -1,4 +1,5 @@
 import { Contenido } from "../Components/Contenido"
+import { Footer } from "../Components/Footer"
 import { Header } from "../Components/Header"
 import { Inicio } from "../Components/Inicio"
 import { Nft } from "../Components/Nft"
@@ -12,6 +13,7 @@ export const LandingPage = () => {
             <Nft></Nft>
             <Nosotros></Nosotros>
             <Contenido></Contenido>
+            <Footer></Footer>
         </div>
             
     )

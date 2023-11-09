@@ -1,12 +1,11 @@
-import contenido1 from '../assets/Img/ImgContenido1.png'
 import MainContenido from '../assets/Icon/MainContenido.svg'
 import Esmeralda from '../assets/Icon/Emerald.svg'
 import PropTypes from 'prop-types';
 
-export const CardContenido = ({nombre, puntos, dinero}) => {
+export const CardContenido = ({perfil, nombre, puntos, dinero}) => {
     return(
-        <div className="flex flex-row">
-            <img className='pt-5 pb-5' src={contenido1} alt="" />
+        <div className="flex flex-row hover:scale-110 hover:duration-300">
+            <img className='pt-5 pb-5' src={perfil} alt="" />
             <div className="flex flex-col justify-center pl-5">
                 <div className="flex flex-row">
                     <h2 className='font-bold text-[#FFFFFF]'>{nombre}</h2>
@@ -25,6 +24,7 @@ export const CardContenido = ({nombre, puntos, dinero}) => {
 }
 
 CardContenido.propTypes = {
+    perfil: PropTypes.string.isRequired,
     nombre: PropTypes.string.isRequired,
     puntos: PropTypes.string.isRequired,
     dinero: PropTypes.string.isRequired,

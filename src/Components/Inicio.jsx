@@ -9,7 +9,7 @@ import logo5 from '../assets/Icon/Logo5.svg'
 export const Inicio = () => {
     return (
         <>
-            <div className="flex flex-row justify-center pt-20 pl-10">
+            <div className="flex flex-row justify-center pt-20 pl-10 overflow-hidden">
                 <div className="flex flex-col basis-1/2 justify-center items-center">
                     <h2 className="text-7xl font-light">
                         <span className="text-white font-thin">Explora el nuevo <br /> mundo del </span>

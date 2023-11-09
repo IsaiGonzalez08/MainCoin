@@ -7,7 +7,7 @@ import Comunidad from '../assets/Icon/Comunidad.svg'
 
 export const Nosotros = () => {
     return(
-        <div className="bg-[url('./assets/Img/Background2.png')] w-full h-[108vh] bg-no-repeat bg-cover">
+        <div className="bg-[url('./assets/Img/Background2.png')] w-full h-[108vh] bg-no-repeat bg-cover overflow-hidden">
              <div className="flex flex-col items-center pt-52">
                 <h2 className="text-5xl ">
                     <span className="text-[#FFFFFF] font-bold">¿Por qué Main</span>

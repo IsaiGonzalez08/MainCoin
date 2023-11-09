@@ -1,10 +1,10 @@
-import Log from '../assets/Icon/MainCoin.svg'
+import Logo from '../assets/Icon/MainCoin.svg'
 
 export const Header = () => {
     return(
         <header className="flex flex-row">
             <div className="flex flex-row basis-1/2 justify-center pt-10 pr-60">
-                <img src={Log}/>
+                <img src={Logo}/>
                 <h2 className='text-[#FFFFFF] font-semibold pl-2 pt-2'>Main</h2>
                 <h2 className='text-[#FFFFFF] font-light pt-2'>Coin</h2>
             </div>
