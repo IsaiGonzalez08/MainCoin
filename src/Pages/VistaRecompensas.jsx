@@ -21,6 +21,7 @@ import filtro6 from '../assets/Img/filtro6.png'
 import filtro7 from '../assets/Img/filtro7.png'
 import filtro8 from '../assets/Img/filtro8.png'
 import filtro9 from '../assets/Img/filtro9.png'
+import filtro10 from '../assets/Img/filtro10.png'
 
 
 export const VistaRecompensa = () => {
@@ -34,15 +35,15 @@ export const VistaRecompensa = () => {
                     <div className="bg-[#EDEDED] w-14 h-14 mt-4 rounded-full absolute"></div>
                     <h2 className='text-[#747474] font-medium mt-4 z-10 pl-3 text-5xl'>Mis recompensas</h2>
                     <div className="flex flex-row ml-[90vh] gap-8 pt-7">
-                        <button className='bg-[#B2B4DD] rounded-full w-12 pl-2 h-12'><img src={FlechaIzq} /></button>
-                        <button className='bg-[#B2B4DD] rounded-full w-12 pl-2 h-12'><img src={FlechaDer} /></button>
+                        <button className='bg-[#B2B4DD] rounded-full w-12 pl-2 h-12'><img src={FlechaIzq}/></button>
+                        <button className='bg-[#B2B4DD] rounded-full w-12 pl-2 h-12'><img src={FlechaDer}/></button>
                     </div>
                 </div>
                 <div className='bg-[#D9D9D920] w-[158vh] h-[528px] mt-5 ml-[2vh] border-[1.5px] border-[#6F6F6F20] overflow-hidden'>
                     <div className='flex flex-row pl-5 pt-5 gap-5'>
                         <CardUsuarioRecom img={Recompensa1} nombre="ShadowFuture" puntos="3 000" dinero="4,200.00"></CardUsuarioRecom>
-                        <CardUsuarioRecom img={Recompensa1} nombre="ShadowFuture" puntos="3 000" dinero="4,200.00"></CardUsuarioRecom>
-                        <CardUsuarioRecom img={Recompensa1} nombre="ShadowFuture" puntos="3 000" dinero="4,200.00"></CardUsuarioRecom>
+                        <CardUsuarioRecom img={filtro9} nombre="ShadowFuture" puntos="3 000" dinero="4,200.00"></CardUsuarioRecom>
+                        <CardUsuarioRecom img={filtro10} nombre="ShadowFuture" puntos="3 000" dinero="4,200.00"></CardUsuarioRecom>
                     </div>
                 </div>
             </div>

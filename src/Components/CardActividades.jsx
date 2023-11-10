@@ -4,7 +4,7 @@ import Coin from '../assets/Icon/Coin.svg'
 export const CardActividades = ({img, nombre, valor, descripcion, xp}) => {
     return(
         <div className="w-[340px] h-[52vh] flex flex-col border-2 hover:border-[#5257B3] hover:duration-100 hover:scale-105 mt-[25px]">
-            <img className='w-[340px] h-[25vh] object-cover objetc-center' src={img}/>
+            <img className='w-[340px] h-[25vh] object-cover object-top' src={img}/>
             <div className="bg-[#FFFFFF] w-[337px] h-[245px] flex flex-col">
                 <div className="flex flex-row pl-4 pt-2 justify-around">
                     <h2 className='font-bold text-[26px] pr-14'>{nombre}</h2>
