@@ -64,7 +64,7 @@ export const HeaderDashBoard = () => {
                     <h2 className='text-[#FFFFFF] font-normal text-center text-2xl'>Comenzar a explorar nuevos cursos</h2>
                     <h4 className='text-[#FFFFFF] font-thin text-center text-lg pt-3 pb-5'>Comienza a explorar nuevos cursos ahora para conseguir <br /> 
                     muchos premios y subir de rango.</h4>
-                    <button className='bg-[#5257B3] w-[45vh] h-9 rounded-sm text-[#FFFFFF] font-semibold ml-6'>¡Comenzar!</button>
+                    <button className='bg-[#5257B3] w-[45vh] h-9 rounded-sm text-[#FFFFFF] font-semibold ml-6 hover:scale-105 hover:duration-300'>¡Comenzar!</button>
                 </div>
             </div>
         </header>

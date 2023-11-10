@@ -5,6 +5,7 @@ import { ActividadUsuario } from "../Pages/ActividadUsuario";
 import { VistaRecompensa } from "../Pages/VistaRecompensas";
 import { Login } from "../Pages/Login";
 import { Registro } from "../Pages/Registro";
+import { CursoUsuario } from "../Pages/CursoUsuario";
 
 export const AppRouter = () => {
     return(
@@ -16,6 +17,7 @@ export const AppRouter = () => {
                 <Route path="/recompensa" element={<VistaRecompensa/>}/>
                 <Route path="/login" element={<Login/>}/>
                 <Route path="/registro" element={<Registro/>}/>
+                <Route path="/curso" element={<CursoUsuario/>}/>
             </Routes>
         </BrowserRouter>
     )

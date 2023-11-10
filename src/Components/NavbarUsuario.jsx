@@ -1,6 +1,6 @@
 import { NavLink } from 'react-router-dom';
 
-export const NavbarUser = () => {
+export const NavbarUsuario = () => {
     return(
         <>
             <div className="flex flex-row justify-start w-[160vh] h-40 ml-[10vh] bg-[#FFFFFF] items-center">

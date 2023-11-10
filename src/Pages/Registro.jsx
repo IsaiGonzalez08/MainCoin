@@ -52,7 +52,7 @@ export const Registro = () => {
                     <div className="">
                         <input 
                         type="text" 
-                        placeholder="Ingresa tú correo" 
+                        placeholder="Ingresa tú nombre" 
                         className="h-12 w-[50vh] border-2 
                             border-[#F4F4F4] rounded-sm pl-2"
                             />
@@ -112,7 +112,7 @@ export const Registro = () => {
                         </button>
                     </div>
                     <div className="flex justify-center pt-10">
-                        <button className="font-medium text-[#FFFFFF] bg-[#5257B3] w-[50vh] h-12 rounded-sm hover:scale-105 hover:duration-300">Iniciar sesión</button>
+                        <button className="font-medium text-[#FFFFFF] bg-[#5257B3] w-[50vh] h-12 rounded-sm hover:scale-105 hover:duration-300">Registrarme</button>
                     </div>
                     <div className="flex justify-center mt-32">
                         <h2>¿Ya tienes cuenta? <Link className="font-bold" to="/login">Inicia sesión aquí</Link></h2>

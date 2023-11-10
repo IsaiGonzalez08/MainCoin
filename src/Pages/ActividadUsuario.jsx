@@ -2,7 +2,7 @@ import { Actividades } from "../Components/Actividades"
 import { CardActividades } from "../Components/CardActividades"
 import { Footer } from "../Components/Footer"
 import { HeaderDashBoard } from "../Components/HeaderDashboard"
-import { NavbarUser } from "../Components/NavbarUsuario"
+import { NavbarUsuario } from "../Components/NavbarUsuario"
 import FlechaDer from '../assets/Icon/FlechaDer.svg'
 import FlechaIzq from '../assets/Icon/FlechaIzq.svg'
 import Actividad1 from '../assets/Img/Actividad1.png' 
@@ -18,7 +18,7 @@ export const ActividadUsuario = () => {
     return(
         <>
             <HeaderDashBoard></HeaderDashBoard>
-            <NavbarUser></NavbarUser>
+            <NavbarUsuario></NavbarUsuario>
             <Actividades></Actividades>
             <div className='flex flex-row items-center ml-24'>
                 <div className="bg-[#EDEDED] w-14 h-14 mt-4 rounded-full absolute"></div>

@@ -5,9 +5,15 @@ import imgLogin from '../assets/Img/imgLogin.png'
 import IconLogin from '../assets/Icon/IconLogin.svg'
 import OcultarContraseña from '../assets/Icon/OcultarContraseña.svg'
 import MostrarContraseña from '../assets/Icon/MostrarContraseña.svg'
-import { Link } from "react-router-dom"
+import { Link, useNavigate } from "react-router-dom"
 
 export const Login = () => {
+
+    const naviagate = useNavigate()
+
+    const navigateBoard = () => {
+        naviagate('/board')
+    }
 
     const [password, setPassword] = useState('');
     const [showPassword, setShowPassword] = useState(false);
@@ -66,7 +72,9 @@ export const Login = () => {
                         </button>
                     </div>
                     <div className="flex justify-center pt-10">
-                        <button className="font-medium text-[#FFFFFF] bg-[#5257B3] w-[50vh] h-12 rounded-sm hover:scale-105 hover:duration-300">Iniciar sesión</button>
+                        <button className="font-medium text-[#FFFFFF] bg-[#5257B3] 
+                        w-[50vh] h-12 rounded-sm hover:scale-105 
+                        hover:duration-300" onClick={navigateBoard}>Iniciar sesión</button>
                     </div>
                     <div className="flex justify-center mt-64">
                         <h2>¿No tienes cuenta aún? <Link className="font-bold" to="/registro">Registrate aquí</Link></h2>

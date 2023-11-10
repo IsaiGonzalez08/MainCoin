@@ -1,6 +1,6 @@
 import { CardUsuarioRecom } from "../Components/CardUsuarioRecom"
 import { HeaderDashBoard } from "../Components/HeaderDashboard"
-import { NavbarUser } from "../Components/NavbarUsuario"
+import { NavbarUsuario } from "../Components/NavbarUsuario"
 import { Recompensas } from "../Components/Recompensas"
 import { Titulo } from "../Components/Titulo"
 import FlechaDer from '../assets/Icon/FlechaDer.svg'
@@ -29,7 +29,7 @@ export const VistaRecompensa = () => {
     return(
         <>
             <HeaderDashBoard></HeaderDashBoard>
-            <NavbarUser></NavbarUser>
+            <NavbarUsuario></NavbarUsuario>
             <div className="w-[160vh] h-[70vh] ml-[10vh] bg-[#FFFFFF] border-y-2 border-[#6F6F6F40]">
                 <div className='flex flex-row items-center'>
                     <div className="bg-[#EDEDED] w-14 h-14 mt-4 rounded-full absolute"></div>
