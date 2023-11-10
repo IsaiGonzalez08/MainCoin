@@ -15,8 +15,21 @@ export const Login = () => {
         naviagate('/board')
     }
 
+    const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const [showPassword, setShowPassword] = useState(false);
+
+    const handleLogin = () => {
+        if (!email || !password) {
+          alert('Por favor, ingresa nombre de usuario y contraseña.');
+          return;
+        }
+        if (email === 'hiram@gmail.com' && password === 'hiram123') {
+          navigateBoard()
+        } else {
+          alert('Credenciales incorrectas. Por favor, inténtalo de nuevo.');
+        }
+      };
   
     const togglePasswordVisibility = () => {
       setShowPassword(!showPassword);
@@ -27,7 +40,7 @@ export const Login = () => {
             <div className="flex flex-row">
                 <div className="basis-1/2 bg-[#000000] w-full h-screen">
                     <div className="flex flex-row justify-start pt-10 pl-10">
-                        <img className="w-12" src={Logo} />
+                        <Link to="/landing"><img className="w-12" src={Logo} /></Link>
                         <h2 className='text-[#FFFFFF] font-semibold pl-4 pt-2'>Main</h2>
                         <h2 className='text-[#FFFFFF] font-light pt-2'>Coin</h2>
                     </div>
@@ -49,7 +62,9 @@ export const Login = () => {
                         <input 
                         type="text" 
                         placeholder="Ingresa tú correo" 
-                        className="h-12 w-[50vh] border-2 border-[#F4F4F4] rounded-sm pl-2"/>
+                        className="h-12 w-[50vh] border-2 border-[#F4F4F4] rounded-sm pl-2"
+                        onChange={(e) => setEmail(e.target.value)}
+                        />
                     </div>
                     <div className="flex justify-center relative">
                         <input
@@ -74,7 +89,7 @@ export const Login = () => {
                     <div className="flex justify-center pt-10">
                         <button className="font-medium text-[#FFFFFF] bg-[#5257B3] 
                         w-[50vh] h-12 rounded-sm hover:scale-105 
-                        hover:duration-300" onClick={navigateBoard}>Iniciar sesión</button>
+                        hover:duration-300" onClick={handleLogin}>Iniciar sesión</button>
                     </div>
                     <div className="flex justify-center mt-64">
                         <h2>¿No tienes cuenta aún? <Link className="font-bold" to="/registro">Registrate aquí</Link></h2>

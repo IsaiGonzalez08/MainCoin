@@ -5,14 +5,15 @@ import Configuracion from '../assets/Icon/Configuracion.svg'
 import Perfil from '../assets/Icon/Perfil.svg'
 import FotoUsuario from '../assets/Img/FotoUsuario.png'
 import Rango from '../assets/Icon/Rango.svg'
+import { Link } from 'react-router-dom'
 
 export const HeaderDashBoard = () => {
     return(
         <header className="flex flex-col">
             <div className="flex flex-row justify-around w-full h-32 bg-[#414141]">
                 <div className="flex flex-row items-center">
-                    <div className="">
-                        <img src={Logo}/>
+                    <div className="cursor-pointer">
+                        <Link to="/landing"><img src={Logo}/></Link>
                     </div>
                     <div className="flex flex-row">
                         <h2 className='pl-3'>

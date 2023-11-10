@@ -5,6 +5,7 @@ import logo2 from '../assets/Icon/Logo2.svg'
 import logo3 from '../assets/Icon/Logo3.svg'
 import logo4 from '../assets/Icon/Logo4.svg'
 import logo5 from '../assets/Icon/Logo5.svg'
+import { Link } from 'react-router-dom'
 
 export const Inicio = () => {
     return (
@@ -19,13 +20,15 @@ export const Inicio = () => {
                         Bienvenido al mundo del arte de los NFT, en donde MainCoin tiene diversas
                         recompensas <br /> para ti mientras vas aprendiento en este nuevo mundo virtual.
                     </p>
-                    <div className="w-56 h-10 mt-10 mr-60 flex flex-row items-center relative cursor-pointer">
-                        <div className="w-10 h-10 rounded-full overflow-hidden">
-                            <div className="absolute bg-[#5257B3] w-12 h-12 rounded-full hover:w-64 transition-width duration-300 ml-2"></div>
+                    <Link to='/login'>
+                        <div className="w-56 h-10 mt-10 mr-60 flex flex-row items-center relative cursor-pointer">
+                            <div className="w-10 h-10 rounded-full overflow-hidden">
+                                <div className="absolute bg-[#5257B3] w-12 h-12 rounded-full hover:w-64 transition-width duration-300 ml-2"></div>
+                            </div>
+                            <h2 className='text-[#FFFFFF] relative z-10 pt-2 font-semibold'>Empezar ahora!</h2>
+                            <img className='pl-4 relative z-11 pt-2' src={flecha} alt="" />
                         </div>
-                        <h2 className='text-[#FFFFFF] relative z-10 pt-2 font-semibold'>Empezar ahora!</h2>
-                        <img className='pl-4 relative z-11 pt-2' src={flecha} alt="" />
-                    </div>
+                    </Link>
                     <div className="flex flex-row pt-20 items-center pl-16">
                         <h2 className='text-[#FFFFFF] pr-2 font-bold'>10K</h2>
                         <div className='bg-[#FFFFFF] w-[1px] h-5'></div>

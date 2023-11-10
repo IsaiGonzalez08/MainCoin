@@ -13,8 +13,16 @@ import Actividad5 from '../assets/Img/Card4.png'
 import Actividad6 from '../assets/Img/Card5.png'
 import Actividad7 from '../assets/Img/Actividad7.png'
 import Actividad8 from '../assets/Img/Actividad8.png'    
+import { useNavigate } from "react-router-dom"
 
 export const ActividadUsuario = () => {
+
+    const navigate = useNavigate()
+
+    const navigateCurso = () => {
+        navigate('/curso')
+    }
+
     return(
         <>
             <HeaderDashBoard></HeaderDashBoard>
@@ -35,7 +43,9 @@ export const ActividadUsuario = () => {
                                     valor="500" 
                                     descripcion="Gear se creó con el propósito de convertirse en una
                                     plataforma esencial para construir el ecosistema Web3." 
-                                    xp="50">
+                                    xp="50"
+                                    curso={navigateCurso}
+                                    >
                      </CardActividades>
                      <CardActividades img={Actividad2} 
                                     nombre="Vara Net" 

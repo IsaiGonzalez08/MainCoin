@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import Coin from '../assets/Icon/Coin.svg'
 
-export const CardActividades = ({img, nombre, valor, descripcion, xp}) => {
+export const CardActividades = ({img, nombre, valor, descripcion, xp, curso}) => {
     return(
         <div className="w-[340px] h-[52vh] flex flex-col border-2 hover:border-[#5257B3] hover:duration-100 hover:scale-105 mt-[25px]">
             <img className='w-[340px] h-[25vh] object-cover object-top' src={img}/>
@@ -24,7 +24,7 @@ export const CardActividades = ({img, nombre, valor, descripcion, xp}) => {
                     <h2 className='font-medium'>Genera +{xp} XP por completarlo</h2>
                 </div>
                 <div className='flex flex-row justify-center pt-3'>
-                    <button className='hover:border-b-2 hover:border-[#5257B3] hover:duration-100 font-semibold'>Comenzar</button>
+                    <button className='hover:border-b-2 hover:border-[#5257B3] hover:duration-100 font-semibold' onClick={curso}>Comenzar</button>
                 </div>
             </div>
         </div>
@@ -37,4 +37,5 @@ CardActividades.propTypes = {
     valor: PropTypes.string.isRequired,
     descripcion: PropTypes.string.isRequired,
     xp: PropTypes.string.isRequired,
+    curso: PropTypes.string.isRequired,
 }

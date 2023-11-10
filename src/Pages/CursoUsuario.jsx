@@ -2,8 +2,15 @@ import { HeaderDashBoard } from "../Components/HeaderDashboard"
 import Logo from '../assets/Icon/IconLogin.svg'
 import Coin from '../assets/ICon/Coin.svg'
 import FondoCurso from '../assets/Img/FondoCurso.png'
+import { useEffect } from "react"
 
 export const CursoUsuario = () => {
+
+    useEffect(() => {
+        // Cuando el componente se monta, desplázate al principio de la página
+        window.scrollTo(0, 0);
+      }, []);
+
     return(
         <>
             <HeaderDashBoard></HeaderDashBoard>

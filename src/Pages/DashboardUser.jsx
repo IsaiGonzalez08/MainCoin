@@ -1,4 +1,3 @@
-import { useNavigate } from "react-router-dom"
 import { Actividades } from "../Components/Actividades"
 import { Footer } from "../Components/Footer"
 import { HeaderDashBoard } from "../Components/HeaderDashboard"
@@ -7,12 +6,6 @@ import { Progreso } from "../Components/Progreso"
 import { Recompensas } from "../Components/Recompensas"
 
 export const DashboardUser = () => {
-
-    const navigate = useNavigate()
-
-    const navigateCurso = () => {
-        navigate('/curso')
-    }
 
     return(
         <div className="w-full h-full">
@@ -27,7 +20,7 @@ export const DashboardUser = () => {
                     <h2 className='text-[#2A2A2A] font-bold z-10 pl-3 mt-14 text-5xl text-center'>¡Recuerda completar actividades para recibir <br /> diferentes premios!</h2>
                 </div>
                 <div className="flex flex-row justify-center">
-                    <button className="bg-[#D2D3EB] w-[55vh] h-12 items-center hover:scale-110 hover:duration-300" onClick={navigateCurso}>
+                    <button className="bg-[#D2D3EB] w-[55vh] h-12 items-center hover:scale-110 hover:duration-300">
                         <span className="text-[#2A2A2A] font-semibold">¡COMENZAR AHORA!</span>
                     </button>
                 </div>

@@ -1,14 +1,7 @@
-import { useNavigate } from 'react-router-dom'
 import FlechaDer from '../assets/Icon/FlechaDer.svg'
 import FlechaIzq from '../assets/Icon/FlechaIzq.svg' 
 
 export const Actividades = () => {
-
-    const navigate = useNavigate()
-
-    const navigateCurso = () => {
-        navigate('/curso')
-    }
 
     return(
         <div className="w-[160vh] h-[60vh] ml-[10vh] bg-[#FFFFFF] border-y-2 border-[#6F6F6F40]">
@@ -25,7 +18,7 @@ export const Actividades = () => {
                     <div className="flex flex-col pt-36">
                         <h2 className='text-center text-4xl text-[#6F6F6F] pb-5'>¿Listos para comenzar en el <br /> mundo virtual?</h2>
                         <button className='bg-[#5257B3] w-[25vh] h-9 rounded-sm text-[#FFFFFF] 
-                        font-semibold ml-28 hover:scale-105 hover:duration-300' onClick={navigateCurso}>¡COMENZAR!</button>
+                        font-semibold ml-28 hover:scale-105 hover:duration-300' >¡COMENZAR!</button>
                     </div>
                 </div>
             </div>
