@@ -51,11 +51,11 @@ export const Inicio = () => {
                 </div>
             </div>
             <div className="flex flex-row w-full justify-center gap-24 pt-36">
-                    <img className='w-32 h-20' src={logo1} alt="" />
-                    <img className='w-44 h-14 mt-3' src={logo2} alt="" />
-                    <img className='w-40 h-14 mt-3' src={logo3} alt="" />
-                    <img className='w-40 h-12 mt-4' src={logo4} alt="" />
-                    <img className='w-40 h-12 mt-4' src={logo5} alt="" />
+                    <img className='w-56' src={logo1} alt="" />
+                    <img className='w-44 mt-3' src={logo2} alt="" />
+                    <img className='w-40 mt-3' src={logo3} alt="" />
+                    <img className='w-40 mt-4' src={logo4} alt="" />
+                    <img className='w-40 mt-4' src={logo5} alt="" />
             </div>
         </>
     )

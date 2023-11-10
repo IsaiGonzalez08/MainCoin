@@ -1,6 +1,9 @@
+import { useNavigate } from 'react-router-dom';
 import Logo from '../assets/Icon/MainCoin.svg'
 
 export const Header = () => {
+
+    const navigate = useNavigate()
 
     const scrollToSectionContenido = (sectionId) => {
         const section = document.querySelector(sectionId);
@@ -51,7 +54,11 @@ export const Header = () => {
     const handleClickContenido = (event) => {
         event.preventDefault();
         scrollToSectionContenido('#contenido');
-      };  
+      };
+      
+    const handleNavigateLogin = () => {
+      navigate('/login')
+    }  
 
     return(
         <header className="flex flex-row">
@@ -65,7 +72,9 @@ export const Header = () => {
                 <a className='text-[#FFFFFF] text-lg font-light hover:font-bold hover:border-b-2 hover:duration-300' onClick={handleClickExplora}>Explora</a>
                 <a className='text-[#FFFFFF] text-lg font-light hover:font-bold hover:border-b-2 hover:duration-300' onClick={handleClickNosotros}>Nosotros</a>
                 <a className='text-[#FFFFFF] text-lg font-light hover:font-bold hover:border-b-2 hover:duration-300' onClick={handleClickContenido}>Contenido</a>
-                <button className='text-[#FFFFFF] bg-[#5257B3] p-2 rounded-sm font-medium ml-20 w-32 hover:scale-110 hover:duration-300'>Iniciar sesión</button>
+                <button className='text-[#FFFFFF] bg-[#5257B3] p-2 rounded-sm 
+                font-medium ml-20 w-32 hover:scale-110 hover:duration-300' 
+                onClick={handleNavigateLogin}>Iniciar sesión</button>
             </div>
         </header>
     )

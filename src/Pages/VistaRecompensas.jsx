@@ -1,6 +1,6 @@
 import { CardUsuarioRecom } from "../Components/CardUsuarioRecom"
 import { HeaderDashBoard } from "../Components/HeaderDashboard"
-import { NavbarUser } from "../Components/NavbarUser"
+import { NavbarUser } from "../Components/NavbarUsuario"
 import { Recompensas } from "../Components/Recompensas"
 import { Titulo } from "../Components/Titulo"
 import FlechaDer from '../assets/Icon/FlechaDer.svg'

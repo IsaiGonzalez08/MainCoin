@@ -1,7 +1,7 @@
 import { Actividades } from "../Components/Actividades"
 import { Footer } from "../Components/Footer"
 import { HeaderDashBoard } from "../Components/HeaderDashboard"
-import { NavbarUser } from "../Components/NavbarUser"
+import { NavbarUser } from "../Components/NavbarUsuario"
 import { Progreso } from "../Components/Progreso"
 import { Recompensas } from "../Components/Recompensas"
 
