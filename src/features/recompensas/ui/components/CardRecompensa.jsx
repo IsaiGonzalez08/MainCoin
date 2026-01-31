@@ -1,5 +1,3 @@
-import IconRecompensa from '../assets/Icon/IconRecompensa.svg'
-import Esmeralda from '../assets/Icon/Emerald.svg'
 import PropTypes from 'prop-types';
 
 export const CardRecompensa = ({img, nombre, puntos, dinero}) => {
@@ -9,10 +7,10 @@ export const CardRecompensa = ({img, nombre, puntos, dinero}) => {
             <div className="bg-[#FFFFFF] w-[345px] h-[117px] rounded-b-md">
                 <div className="flex flex-row pl-4 pt-2">
                     <h2 className='font-bold text-3xl'>{nombre}</h2>
-                    <img src={IconRecompensa} alt="" />
+                    <img src="/Icon/IconRecompensa.svg" alt="" />
                 </div>
                 <div className="flex flex-row items-center pl-4 pt-1">
-                    <img src={Esmeralda} />
+                    <img src="/Icon/Emerald.svg" />
                     <h2 className='pr-2 pl-2 font-medium'>{puntos}</h2>
                     <div className="w-[1.5px] h-5 bg-[#000000]"></div>
                     <h2 className='pl-2'>${dinero}</h2>

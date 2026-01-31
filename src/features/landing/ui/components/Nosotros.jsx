@@ -1,13 +1,6 @@
-import Accesibilidad from '../assets/Icon/Accesibilidad.svg'
-import Seguridad from '../assets/Icon/Seguridad.svg'
-import Variedad from '../assets/Icon/Diversidad.svg'
-import Comunidad from '../assets/Icon/Comunidad.svg'
-
-
-
 export const Nosotros = () => {
     return(
-        <div className="bg-[url('./assets/Img/Background2.png')] w-full h-[108vh] bg-no-repeat bg-cover overflow-hidden" id='nosotros'>
+        <div className="bg-[url('./Img/Background2.png')] w-full h-[108vh] bg-no-repeat bg-cover overflow-hidden" id='nosotros'>
              <div className="flex flex-col items-center pt-52">
                 <h2 className="text-5xl ">
                     <span className="text-[#FFFFFF] font-bold">¿Por qué Main</span>
@@ -20,7 +13,7 @@ export const Nosotros = () => {
                 </h2>
                 <div className="flex flex-row pt-20 gap-20 pb-96">
                     <div className="flex flex-col items-center text-center">
-                        <img src={Accesibilidad}/>
+                        <img src="/Icon/Accesibilidad.svg"/>
                         <h2 className="text-[#FFFFFF] text-2xl font-bold">Accesibilidad</h2>
                         <p className="text-[#FFFFFF] font-thin">MainCoin se enorgullece de ofrecer una <br /> 
                         plataforma fácil de usar, diseñada para <br /> 
@@ -28,7 +21,7 @@ export const Nosotros = () => {
                         experiencia.</p>
                     </div>
                     <div className="flex flex-col items-center text-center">
-                        <img src={Seguridad}/>
+                        <img src="/Icon/Seguridad.svg"/>
                             <h2 className="text-[#FFFFFF] text-2xl font-bold">Seguridad</h2>
                             <p className="text-[#FFFFFF] font-thin">Nos comprometemos a proporcionar una <br /> 
                             plataforma segura y confiable, respaldada <br />
@@ -36,7 +29,7 @@ export const Nosotros = () => {
                             tecnología blockchain.</p>
                         </div>
                     <div className="flex flex-col items-center text-center">
-                        <img src={Variedad}/>
+                        <img src="/Icon/Link.svg"/>
                             <h2 className="text-[#FFFFFF] text-2xl font-bold">Variedad</h2>
                             <p className="text-[#FFFFFF] font-thin">Nuestra plataforma ofrece una amplia gama <br /> 
                             de NFTs, desde arte digital hasta 
@@ -44,7 +37,7 @@ export const Nosotros = () => {
                              digitales.</p>
                         </div>
                     <div className="flex flex-col items-center text-center">
-                        <img src={Comunidad}/>
+                        <img src="/Icon/Comunidad.svg"/>
                             <h2 className="text-[#FFFFFF] text-2xl font-bold">Comunidad</h2>
                             <p className="text-[#FFFFFF] font-thin">Al unirte a MainCoin, te conviertes en parte <br /> 
                             de una comunidad en constante crecimiento <br /> 

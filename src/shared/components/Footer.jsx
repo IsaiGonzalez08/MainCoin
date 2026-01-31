@@ -1,15 +1,10 @@
-import Logo from '../assets/Icon/MainCoin.svg';
-import Twitter from '../assets/Icon/Twitter.svg';
-import Linkedln from '../assets/Icon/Link.svg';
-import Github from '../assets/Icon/GitHub.svg';
-
 export const Footer = () => {
     return(
         <footer className="flex flex-row justify-between w-full h-36 overflow-hidden bg-[#141414] items-center">
             <div className="flex flex-col items-end ml-32">
                 <div className="flex flex-row justify-around mr-10">
                     <div className="">
-                        <img className='' src={Logo}/>
+                        <img className='' src="/Icon/MainCoin.svg"/>
                     </div>
                     <div className="">
                         <h2 className='ml-3'>
@@ -31,9 +26,9 @@ export const Footer = () => {
                 <div className="flex flex-row">
                     <h4 className='text-[#FFFFFF] pt-4 font-thin'>Siguenos en nuestras redes sociales</h4>
                     <div className="flex flex-row pt-3 pl-10 gap-5">
-                        <img src={Twitter}/>
-                        <img src={Linkedln}/>
-                        <img src={Github}/>
+                        <img src="/Icon/Twitter.svg"/>
+                        <img src="/Icon/Link.svg"/>
+                        <img src="/Icon/GitHub.svg"/>
                     </div>
                 </div>
             </div>

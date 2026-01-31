@@ -1,6 +1,3 @@
-import FlechaDer from '../assets/Icon/FlechaDer.svg'
-import FlechaIzq from '../assets/Icon/FlechaIzq.svg' 
-
 export const Actividades = () => {
 
     return(
@@ -9,8 +6,8 @@ export const Actividades = () => {
                 <div className="bg-[#EDEDED] w-14 h-14 mt-4 rounded-full absolute"></div>
                 <h2 className='text-[#747474] font-medium mt-4 z-10 pl-3 text-5xl'>Mis actividades</h2>
                 <div className="flex flex-row ml-[90vh] gap-8 pt-7">
-                    <button className='bg-[#B2B4DD] rounded-full w-12 pl-2 h-12'><img src={FlechaIzq}/></button>
-                    <button className='bg-[#B2B4DD] rounded-full w-12 pl-2 h-12'><img src={FlechaDer}/></button>
+                    <button className='bg-[#B2B4DD] rounded-full w-12 pl-2 h-12'><img src="/Icon/FlechaIzq.svg"/></button>
+                    <button className='bg-[#B2B4DD] rounded-full w-12 pl-2 h-12'><img src="/Icon/FlechaDer.svg"/></button>
                 </div>
             </div>
             <div className='bg-[#B2B4DD20] w-[158vh] h-96 mt-5 ml-[2vh] border-[1.5px] border-[#6F6F6F20]'>

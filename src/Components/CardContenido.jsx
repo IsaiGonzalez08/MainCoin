@@ -1,5 +1,3 @@
-import MainContenido from '../assets/Icon/MainContenido.svg'
-import Esmeralda from '../assets/Icon/Emerald.svg'
 import PropTypes from 'prop-types';
 
 export const CardContenido = ({perfil, nombre, puntos, dinero}) => {
@@ -9,10 +7,10 @@ export const CardContenido = ({perfil, nombre, puntos, dinero}) => {
             <div className="flex flex-col justify-center pl-5">
                 <div className="flex flex-row">
                     <h2 className='font-bold text-[#FFFFFF]'>{nombre}</h2>
-                    <img src={MainContenido} alt="" />
+                    <img src="/Icon/MainContenido.svg" alt="" />
                 </div>
                 <div className="flex flex-row">
-                    <img src={Esmeralda} />
+                    <img src="/Icon/Emerald.svg" />
                     <h2 className='text-[#FFFFFF] pr-2'>{puntos}</h2>
                     <div className="bg-[#FFFFFF] w-[1px] h-5"></div>
                     <h2 className='text-[#FFFFFF] pl-2'>${dinero}</h2>

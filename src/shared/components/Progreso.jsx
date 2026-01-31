@@ -1,9 +1,3 @@
-import ImgUser from '../assets/Img/ImgUserCirc.png'
-import Esmeralda from '../assets/Icon/Emerald.svg'
-import Coin from '../assets/Icon/Coin.svg'
-import LogroMain from '../assets/Icon/LogroMain.svg'
-import Rango from '../assets/Icon/Rango.svg'
-
 export const Progreso = () => {
 
     const divStyle = {
@@ -24,38 +18,38 @@ export const Progreso = () => {
             <div style={divStyle}>
                 <div className='flex flex-row gap-24 items-center'>
                     <div>
-                        <img className='ml-10 w-60 mt-5' src={ImgUser}/>
+                        <img className='ml-10 w-60 mt-5' src="/Img/ImgUserCirc.png"/>
                     </div>
                     <div className='flex flex-col'>
                         <h2 className='text-3xl text-[#FFFFFF] font-semibold'>Hiram Mendez</h2>
                         <h4 className='text-lg text-[#FFFFFF] font-normal'>correoprueba@electronico.com</h4>
                         <div className="flex flex-row items-center pt-5">
-                            <img className='w-8' src={Esmeralda} alt="" />
+                            <img className='w-8' src="/Icon/Emerald.svg" alt="" />
                             <h2 className='text-[#FFFFFF]'>Total esmeraldas: 99999</h2>
                         </div>
                         <div className="flex flex-row items-center">
-                            <img src={Coin} alt="" />
+                            <img src="/Icon/Coin.svg" alt="" />
                             <h2 className='text-[#FFFFFF]'>Total de monedas: 99999</h2>
                         </div>
                     </div>
                     <div className="flex flex-col">
                         <h2 className='text-[#FFFFFF] font-light'>Logros</h2>
                         <div className="flex flex-row">
-                            <img src={LogroMain} alt="" />
-                            <img src={LogroMain} alt="" />
-                            <img src={LogroMain} alt="" />
-                            <img src={LogroMain} alt="" />
+                            <img src="/Icon/LogroMain.svg" alt="" />
+                            <img src="/Icon/LogroMain.svg" alt="" />
+                            <img src="/Icon/LogroMain.svg" alt="" />
+                            <img src="/Icon/LogroMain.svg" alt="" />
                         </div>
                         <div className="flex flex-row">
-                            <img src={LogroMain} alt="" />
-                            <img src={LogroMain} alt="" />
-                            <img src={LogroMain} alt="" />
-                            <img src={LogroMain} alt="" />
+                            <img src="/Icon/LogroMain.svg" alt="" />
+                            <img src="/Icon/LogroMain.svg" alt="" />
+                            <img src="/Icon/LogroMain.svg" alt="" />
+                            <img src="/Icon/LogroMain.svg" alt="" />
                         </div>
                     </div>
                     <div className="flex flex-col ">
                         <div className="flex flex-row items-center">
-                            <img className='w-14' src={Rango} alt="" />
+                            <img className='w-14' src="/Icon/Rango.svg" alt="" />
                             <h2 className='text-[#FFFFFF] pl-2 pr-3'>Nivel 1</h2>
                             <div className='w-[1px] h-4 bg-[#FFFFFF]'></div>
                             <h2 className='text-[#FFFFFF] pl-2'>Principiante</h2>

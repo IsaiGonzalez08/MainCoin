@@ -1,18 +1,9 @@
-import { CardContenido } from "./CardContenido"
-import Contenido1 from '../assets/Img/ImgContenido1.png'
-import Contenido2 from '../assets/Img/ImgContenido2.png'
-import Contenido3 from '../assets/Img/ImgContenido3.png'
-import Contenido4 from '../assets/Img/ImgContenido4.png'
-import Contenido5 from '../assets/Img/ImgContenido5.png'
-import Contenido6 from '../assets/Img/ImgContenido6.png'
-import Contenido7 from '../assets/Img/ImgContenido7.png'
-import Contenido8 from '../assets/Img/ImgContenido8.png'
-
+import { CardContenido } from "../../../../Components/CardContenido"
 
 export const Contenido = () => {
     return(
         <>
-            <div className="bg-[url('./assets/Img/Background3.png')] w-full h-[160vh] bg-no-repeat bg-cover overflow-hidden" id="contenido">
+            <div className="bg-[url('./Img/Background3.png')] w-full h-[160vh] bg-no-repeat bg-cover overflow-hidden" id="contenido">
                 <div className="flex flex-row justify-start">
                     <h1 className="text-6xl pl-36">
                         <span className="text-[#FFFFFF] font-thin">Tops recompensas en los</span>
@@ -23,17 +14,17 @@ export const Contenido = () => {
                 <div className="flex flex-row justify-center pt-20">
                     <div className="flex flex-col divide-y divide-[#2A2A2A] pr-20">
                         <div className='w-[60vh]'></div>
-                        <CardContenido perfil={Contenido1} nombre="NightFuture" puntos="5 219.90" dinero="$200,129,291.00"/>
-                        <CardContenido perfil={Contenido2} nombre="FutureHunter" puntos="5 219.90" dinero="$200,129,291.00"/>
-                        <CardContenido perfil={Contenido3} nombre="MoneyJudge" puntos="5 219.90" dinero="$200,129,291.00"/>
-                        <CardContenido perfil={Contenido4} nombre="LionBumble" puntos="5 219.90" dinero="$200,129,291.00"/>
+                        <CardContenido perfil="/Img/ImgContenido1.png" nombre="NightFuture" puntos="5 219.90" dinero="$200,129,291.00"/>
+                        <CardContenido perfil="/Img/ImgContenido2.png" nombre="FutureHunter" puntos="5 219.90" dinero="$200,129,291.00"/>
+                        <CardContenido perfil="/Img/ImgContenido3.png" nombre="MoneyJudge" puntos="5 219.90" dinero="$200,129,291.00"/>
+                        <CardContenido perfil="/Img/ImgContenido4.png" nombre="LionBumble" puntos="5 219.90" dinero="$200,129,291.00"/>
                     </div>
                     <div className="flex flex-col divide-y divide-[#2A2A2A]">
                         <div className='w-[60vh]'></div>
-                        <CardContenido perfil={Contenido5} nombre="AstetikCat" puntos="5 219.90" dinero="$200,129,291.00"/>
-                        <CardContenido perfil={Contenido6} nombre="NiftyCanvas" puntos="5 219.90" dinero="$200,129,291.00"/>
-                        <CardContenido perfil={Contenido7} nombre="EtherMasterpieces" puntos="5 219.90" dinero="$200,129,291.00"/>
-                        <CardContenido perfil={Contenido8} nombre="StarBoyVsion" puntos="5 219.90" dinero="$200,129,291.00"/>
+                        <CardContenido perfil="/Img/ImgContenido5.png" nombre="AstetikCat" puntos="5 219.90" dinero="$200,129,291.00"/>
+                        <CardContenido perfil="/Img/ImgContenido6.png" nombre="NiftyCanvas" puntos="5 219.90" dinero="$200,129,291.00"/>
+                        <CardContenido perfil="/Img/ImgContenido7.png" nombre="EtherMasterpieces" puntos="5 219.90" dinero="$200,129,291.00"/>
+                        <CardContenido perfil="/Img/ImgContenido8.png" nombre="StarBoyVsion" puntos="5 219.90" dinero="$200,129,291.00"/>
                     </div>
                 </div>
                 <div className="flex flex-col justify-start pt-64 pr-2 ml-80">

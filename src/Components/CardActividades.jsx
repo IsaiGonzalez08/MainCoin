@@ -1,5 +1,4 @@
 import PropTypes from 'prop-types';
-import Coin from '../assets/Icon/Coin.svg'
 
 export const CardActividades = ({img, nombre, valor, descripcion, xp, curso}) => {
     return(
@@ -9,7 +8,7 @@ export const CardActividades = ({img, nombre, valor, descripcion, xp, curso}) =>
                 <div className="flex flex-row pl-4 pt-2 justify-around">
                     <h2 className='font-bold text-[26px] pr-14'>{nombre}</h2>
                     <div className="flex flex-row pr-8">    
-                        <img src={Coin}/>
+                        <img src="/Icon/Coin.svg"/>
                         <h2 className='text-xl pl-1'>+{valor}</h2>
                     </div>
                 </div>

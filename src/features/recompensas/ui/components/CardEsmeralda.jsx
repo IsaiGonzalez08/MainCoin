@@ -1,13 +1,11 @@
-import Esmeralda from '../assets/Icon/Emerald.svg'
 import PropTypes from 'prop-types'
-import Coin from '../assets/Icon/Coin.svg'
 
 export const CardEsmeralda = ({puntos, costo}) => {
     return(
         <div className="w-[180px] h-[270px] bg-white ml-10 mt-5 rounded-lg border-2 border-[#F5F5F5] hover:scale-105 hover:duration-100">
             <div className="flex flex-col">
                 <div className="flex flex-row justify-center pt-4">
-                    <img className='w-16' src={Esmeralda} />
+                    <img className='w-16' src="/Icon/Emerald.svg" />
                 </div>
                 <div className="flex flex-row justify-center pt-2">
                     <h2 className='font-medium text-sm'>MainCoins</h2>
@@ -18,7 +16,7 @@ export const CardEsmeralda = ({puntos, costo}) => {
                 <div className="flex flex-col items-center pt-4">
                     <h2 className=''>Costo</h2>
                     <div className="flex flex-row items-center mr-3">
-                        <img src={Coin}/>
+                        <img src="/Icon/Coin.svg"/>
                         <h2 className='font-bold pl-1 text-xl'>{costo}</h2>
                     </div>
                 </div>

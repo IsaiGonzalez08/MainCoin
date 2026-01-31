@@ -1,10 +1,3 @@
-import Logo from '../assets/Icon/MainCoin.svg'
-import Esmeralda from '../assets/Icon/Emerald.svg'
-import Coin from '../assets/Icon/Coin.svg'
-import Configuracion from '../assets/Icon/Configuracion.svg'
-import Perfil from '../assets/Icon/Perfil.svg'
-import FotoUsuario from '../assets/Img/FotoUsuario.png'
-import Rango from '../assets/Icon/Rango.svg'
 import { Link } from 'react-router-dom'
 
 export const HeaderDashBoard = () => {
@@ -13,7 +6,7 @@ export const HeaderDashBoard = () => {
             <div className="flex flex-row justify-around w-full h-32 bg-[#414141]">
                 <div className="flex flex-row items-center">
                     <div className="cursor-pointer">
-                        <Link to="/landing"><img src={Logo}/></Link>
+                        <Link to="/landing"><img src="/Icon/MainCoin.svg"/></Link>
                     </div>
                     <div className="flex flex-row">
                         <h2 className='pl-3'>
@@ -24,28 +17,28 @@ export const HeaderDashBoard = () => {
                 </div>
                 <div className="flex flex-row gap-8">
                     <div className="flex flex-row items-center">
-                        <img className='w-11 pr-3' src={Esmeralda}/>
+                        <img className='w-11 pr-3' src="/Icon/Emerald.svg"/>
                         <h2 className='text-[#FFFFFF]'>99999</h2>
                     </div>
                     <div className="flex flex-row items-center pr-20">
-                        <img className='pr-3' src={Coin}/>
+                        <img className='pr-3' src="/Icon/Coin.svg"/>
                         <h2 className='text-[#FFFFFF]'>99999</h2>
                     </div>
                     <div className='flex flex-row items-center gap-5'>
-                        <img className='pt-2' src={Configuracion}/>
-                        <img src={Perfil}/>
+                        <img className='pt-2' src="/Icon/Configuracion.svg"/>
+                        <img src="/Icon/Perfil.svg"/>
                     </div>
                 </div>
             </div>
             <div className="flex flex-row justify-between w-full h-72 bg-[#2A2A2A]">
                 <div className="flex flex-row items-start pt-10 pl-10">
                     <div className="">
-                        <img src={FotoUsuario}/>
+                        <img src="/Img/FotoUsuario.png"/>
                     </div>
                     <div className="flex flex-col">
                         <div className="flex flex-row">
                             <h2 className='text-[#FFFFFF] font-semibold text-2xl pl-3 pr-3'>Hiram Mendez</h2>
-                            <img src={Rango}/>
+                            <img src="/Icon/Rango.svg"/>
                         </div>
                         <div className='flex flex-row items-center pl-3 pt-2 pb-4'>
                             <h2 className='text-[#FFFFFF] pr-2 font-light'>Nivel 1</h2>

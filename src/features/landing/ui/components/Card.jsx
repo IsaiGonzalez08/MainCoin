@@ -1,6 +1,4 @@
-import MainCurso from '../assets/Icon/MainCurso.svg'
 import PropTypes from 'prop-types';
-import CardIcon  from '../assets/Icon/CardIcon.svg'
 
 export const Card = ({titulo,ruta, xp}) => {
     return(
@@ -10,12 +8,12 @@ export const Card = ({titulo,ruta, xp}) => {
                                 hover:border-solid hover:border-2 hover:border-[#5257B3] 
                                 hover:duration-300 hover:scale-105 rounded-xl hover:rounded-xl">
                     <img className="w-64 h-48 rounded-t-xl block max-w-full object-cover objetc-top" src={ruta} />
-                    <img className='ml-28 z-10 mt-[-3vh]' src={CardIcon} alt="" />
+                    <img className='ml-28 z-10 mt-[-3vh]' src="/Icon/CardIcon.svg" alt="" />
                     <div className="flex flex-col bg-[#131313] w-64 h-52 items-center rounded-b-xl gap-4">
                         <h2 className='text-[#FFFFFF] font-semibold text-3xl pt-2'>{titulo}</h2>
                         <div className="flex flex-row bg-[#2A2A2A] w-36 h-7 justify-start rounded-2xl mt-2">
                             <div className="p-1">
-                                <img className='w-5 h-5' src={MainCurso} />
+                                <img className='w-5 h-5' src="/Icon/MainCurso.svg" />
                             </div>
                             <h4 className='flex-flex-row mt-1 ml-4'>
                                 <span className='text-[#FFFFFF] font-medium'>Main</span>
