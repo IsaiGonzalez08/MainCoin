@@ -1,4 +1,4 @@
-import { CardContenido } from "../../../../Components/CardContenido"
+import { CardContenido } from "./CardContenido"
 
 export const Contenido = () => {
     return(

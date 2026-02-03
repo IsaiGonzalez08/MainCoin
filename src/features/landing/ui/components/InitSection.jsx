@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 
-export const Inicio = () => {
+export const InitSection = () => {
     return (
         <>
             <div className="flex flex-row justify-center pt-20 pl-10 overflow-hidden">

@@ -1,6 +1,6 @@
-import { CardUsuarioRecom } from "./components/CardUsuarioRecom"
 import { HeaderDashBoard } from "./components/HeaderDashboard"
 import { NavbarUsuario } from "./components/NavbarUsuario"
+import { CardUsuarioRecom } from "./components/CardUsuarioRecom"
 import { Recompensas } from "./components/Recompensas"
 import { Titulo } from "./components/Titulo"
 import { CardEsmeralda } from "./components/CardEsmeralda"
