@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 export const Card = ({titulo,ruta, xp}) => {
     return(
         <>
-            <div className="flex flex-col items-center pt-14">
+            <div className="cursor-pointer flex flex-col items-center">
                 <div className="border-solid border-2 border-[#2A2A2A] 
                                 hover:border-solid hover:border-2 hover:border-[#5257B3] 
                                 hover:duration-300 hover:scale-105 rounded-xl hover:rounded-xl">

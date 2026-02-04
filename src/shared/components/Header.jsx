@@ -20,7 +20,7 @@ export const Header = () => {
                     <NavLink to="/" onClick={(e) => handleSmoothScroll(e, 'about-us')}>
                         Inicio
                     </NavLink>
-                    <NavLink to="/about" onClick={(e) => handleSmoothScroll(e, 'about-us')}>
+                    <NavLink to="/about" onClick={(e) => handleSmoothScroll(e, 'explore')}>
                         Explora
                     </NavLink>
                     <NavLink to="/contact" onClick={(e) => handleSmoothScroll(e, 'about-us')}>

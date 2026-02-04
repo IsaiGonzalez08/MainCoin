@@ -1,13 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;500;600;700&display=swap');
 
 @tailwind base;
-@layer base{
+@layer base {
     html {
-    font-family: 'Raleway';
-    font-feature-settings: normal;
-    font-variation-settings: normal;
-}
-  :root {
+        font-family: 'Raleway';
+        font-feature-settings: normal;
+        font-variation-settings: normal;
+    }
+    :root {
         --background: 0 0% 100%;
         --foreground: 0 0% 3.9%;
         --card: 0 0% 100%;
@@ -16,7 +16,7 @@
         --popover-foreground: 0 0% 3.9%;
         --primary: #131313;
         --primary-foreground: 0 0% 98%;
-        --secondary: #5257B3;
+        --secondary: #5257b3;
         --secondary-foreground: 0 0% 9%;
         --muted: 0 0% 96.1%;
         --muted-foreground: 0 0% 45.1%;
@@ -34,7 +34,7 @@
         --chart-5: 27 87% 67%;
         --radius: 0.5rem;
     }
-  .dark {
+    .dark {
         --background: 0 0% 3.9%;
         --foreground: 0 0% 98%;
         --card: 0 0% 3.9%;
@@ -65,10 +65,17 @@
 @tailwind utilities;
 
 @layer base {
-  * {
-    @apply border-border;
+    * {
+        @apply border-border;
     }
-  body {
-    @apply bg-background text-foreground;
+    body {
+        @apply bg-background text-foreground;
     }
+}
+
+.scrollbar-none {
+    scrollbar-width: none;
+}
+.scrollbar-none::-webkit-scrollbar {
+    display: none;
 }

@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom'
 
 export const InitSection = () => {
     return (
-        <main className="w-full h-full flex flex-col px-5 py-10 lg:px-20">
+        <main className="w-full h-full flex flex-col justify-between px-5 mt-10 lg:px-20">
             <div className="w-full flex flex-row items-center gap-10">
                 <div className="flex flex-col h-full justify-between w-full lg:w-1/2">
                     <div className="flex flex-col items-center gap-3 lg:items-start lg:gap-8 lg:pt-10">
@@ -27,7 +27,7 @@ export const InitSection = () => {
                     </div>
                 </div>
                 <div className="hidden w-full lg:flex lg:justify-center lg:flex-col lg:w-1/2">
-                    <img className="w-full h-[450px] rounded-t-lg" src="/Img/init-card.png" />
+                    <img className="w-full h-[400px] rounded-t-lg" src="/Img/init-card.png" />
                     <div className="bg-white w-full p-5 rounded-b-lg">
                         <div className="flex flex-col">
                             <h3 className="text-[#7276C1] font-light">Nuevo Curso</h3>
