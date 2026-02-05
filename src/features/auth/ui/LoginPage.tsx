@@ -2,11 +2,7 @@ import { useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 
 export const LoginPage = () => {
-    const naviagate = useNavigate()
-
-    const navigateBoard = () => {
-        naviagate('/board')
-    }
+    const navigate = useNavigate()
 
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
@@ -18,7 +14,7 @@ export const LoginPage = () => {
             return
         }
         if (email === 'hiram@gmail.com' && password === 'hiram123') {
-            navigateBoard()
+            navigate('/board')
         } else {
             alert('Credenciales incorrectas. Por favor, inténtalo de nuevo.')
         }
@@ -43,7 +39,7 @@ export const LoginPage = () => {
                 <h2 className="font-light text-lg">Ingresa tus datos para entrar</h2>
 
                 <input
-                    type="text"
+                    type="email"
                     placeholder="Ingresa tú correo"
                     className="h-12 w-full border-2 border-[#F4F4F4] rounded-sm pl-2 mt-5"
                     onChange={(e) => setEmail(e.target.value)}
