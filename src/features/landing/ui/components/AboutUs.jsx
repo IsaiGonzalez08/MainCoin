@@ -17,7 +17,7 @@ export const AboutUs = () => {
             </h2>
             <div className="grid grid-cols-1 place-items-center sm:grid-cols-2 lg:grid-cols-4 gap-10 mt-14">
                 {reasons.map((reason) => (
-                    <div className="flex flex-col items-center text-center">
+                    <div key={reason.id} className="flex flex-col items-center text-center">
                         <img src={reason.icon} />
                         <h2 className="text-[#FFFFFF] text-2xl font-bold">{reason.title}</h2>
                         <p className="text-[#FFFFFF] font-thin">
