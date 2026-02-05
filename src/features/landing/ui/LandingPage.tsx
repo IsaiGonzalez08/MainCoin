@@ -1,8 +1,8 @@
 import { Header } from '../../../shared/components/Header'
 import { InitSection } from './components/InitSection'
 import { Nft } from './components/Nft'
-import { Nosotros } from './components/Nosotros'
-import { Contenido } from './components/Contenido'
+import { AboutUs } from './components/AboutUs'
+import { Content } from './components/Content'
 import { Footer } from '../../../shared/components/Footer'
 
 export const LandingPage = () => {
@@ -13,8 +13,8 @@ export const LandingPage = () => {
                 <InitSection />
             </div>
             <Nft />
-            <Nosotros />
-            <Contenido />
+            <AboutUs />
+            <Content />
             <Footer />
         </>
     )
