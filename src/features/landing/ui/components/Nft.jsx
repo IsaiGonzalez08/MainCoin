@@ -16,7 +16,7 @@ export const Nft = () => {
                 </p>
             </div>
 
-            <div className="flex flex-row gap-5 my-5 py-5 px-5 lg:px-20 overflow-x-auto scrollbar-none overflow-y-hidden">
+            <div className="w-full flex flex-row gap-5 py-8 px-5 lg:px-20 overflow-x-auto scrollbar-none overflow-y-hidden">
                 {Cards.map((card) => (
                     <Card key={card.id} titulo={card.titulo} ruta={card.ruta} xp={card.xp}/>
                 ))}
