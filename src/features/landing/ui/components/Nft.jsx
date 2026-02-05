@@ -1,3 +1,4 @@
+import { Cards } from '../data'
 import { Card } from './Card'
 
 export const Nft = () => {
@@ -16,12 +17,9 @@ export const Nft = () => {
             </div>
 
             <div className="flex flex-row gap-5 my-5 py-5 px-5 lg:px-20 overflow-x-auto scrollbar-none overflow-y-hidden">
-                <Card titulo="Gear en Node" ruta="/Img/Card1.png" xp="50"></Card>
-                <Card titulo="Vara Network" ruta="/Img/Card2.png" xp="50"></Card>
-                <Card titulo="Contratos" ruta="/Img/Card3.png" xp="50"></Card>
-                <Card titulo="GEAR IDEA" ruta="/Img/Card4.png" xp="50"></Card>
-                <Card titulo="GEAR JS" ruta="/Img/Card5.png" xp="50"></Card>
-                <Card titulo="Contratos" ruta="/Img/Card1.png" xp="50"></Card>
+                {Cards.map((card) => (
+                    <Card key={card.id} titulo={card.titulo} ruta={card.ruta} xp={card.xp}/>
+                ))}
             </div>
         </div>
     )
