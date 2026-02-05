@@ -14,7 +14,7 @@ export const LoginPage = () => {
             return
         }
         if (email === 'hiram@gmail.com' && password === 'hiram123') {
-            navigate('/board')
+            navigate('/dashboard')
         } else {
             alert('Credenciales incorrectas. Por favor, inténtalo de nuevo.')
         }
