@@ -1,0 +1,31 @@
+import PropTypes from 'prop-types';
+import { ContentCard } from '../../domain/types/types';
+
+export const CardContenido = ({perfil, nombre, puntos, dinero}: ContentCard) => {
+    return(
+        <div className="flex flex-row hover:scale-110 hover:duration-300">
+            <img className='pt-5 pb-5' src={perfil} alt="" />
+            <div className="flex flex-col justify-center pl-5">
+                <div className="flex flex-row">
+                    <h2 className='font-bold text-[#FFFFFF]'>{nombre}</h2>
+                    <img src="/Icon/MainContenido.svg" alt="" />
+                </div>
+                <div className="flex flex-row">
+                    <img src="/Icon/Emerald.svg" />
+                    <h2 className='text-[#FFFFFF] pr-2'>{puntos}</h2>
+                    <div className="bg-[#FFFFFF] w-[1px] h-5"></div>
+                    <h2 className='text-[#FFFFFF] pl-2'>${dinero}</h2>
+                </div>
+            </div>
+        </div>
+    )
+    
+}
+
+CardContenido.propTypes = {
+    perfil: PropTypes.string.isRequired,
+    nombre: PropTypes.string.isRequired,
+    puntos: PropTypes.string.isRequired,
+    dinero: PropTypes.string.isRequired,
+
+}

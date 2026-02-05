@@ -1,10 +1,5 @@
-import { Footer } from "../Components/Footer"
+import { Footer } from "../shared/components/Footer"
 import { useState } from 'react'
-import Logo from '../assets/Icon/MainCoin.svg'
-import imgLogin from '../assets/Img/imgLogin.png'
-import IconLogin from '../assets/Icon/IconLogin.svg'
-import OcultarContraseña from '../assets/Icon/OcultarContraseña.svg'
-import MostrarContraseña from '../assets/Icon/MostrarContraseña.svg'
 import { Link, useNavigate } from "react-router-dom"
 
 export const Login = () => {
@@ -40,15 +35,15 @@ export const Login = () => {
             <div className="flex flex-row">
                 <div className="basis-1/2 bg-[#000000] w-full h-screen">
                     <div className="flex flex-row justify-start pt-10 pl-10">
-                        <Link to="/landing"><img className="w-12" src={Logo} /></Link>
+                        <Link to="/landing"><img className="w-12" src="/Icon/MainCoin.svg" /></Link>
                         <h2 className='text-[#FFFFFF] font-semibold pl-4 pt-2'>Main</h2>
                         <h2 className='text-[#FFFFFF] font-light pt-2'>Coin</h2>
                     </div>
-                    <img className="mt-32 ml-36 w-[84vh] absolute" src={imgLogin} />
+                    <img className="mt-32 ml-36 w-[84vh] absolute" src="/Img/imgLogin.png" />
                 </div>
                 <div className="basis-1/2 bg-[#FFFFFF] w-full h-screen">
                     <div className="flex flex-row justify-center mt-56">
-                        <img className="w-8" src={IconLogin} />
+                        <img className="w-8" src="/Icon/IconLogin.svg" />
                         <h2 className='text-[#000000] font-semibold pl-4'>Main</h2>
                         <h2 className='text-[#000000] font-light'>Coin</h2>
                     </div>
@@ -80,7 +75,7 @@ export const Login = () => {
                             className="absolute inset-y-0 ml-[45vh] flex items-center cursor-pointer"
                         >
                             <img
-                            src={showPassword ? OcultarContraseña : MostrarContraseña}
+                            src={showPassword ? "/Icon/OcultarContraseña.svg" : "/Icon/MostrarContraseña.svg"}
                             alt={showPassword ? 'Ocultar Contraseña' : 'Mostrar Contraseña'}
                             className="w-5 h-5"
                             />

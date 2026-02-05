@@ -1,13 +1,9 @@
-import { HeaderDashBoard } from "../Components/HeaderDashboard"
-import Logo from '../assets/Icon/IconLogin.svg'
-import Coin from '../assets/ICon/Coin.svg'
-import FondoCurso from '../assets/Img/FondoCurso.png'
+import { HeaderDashBoard } from "../features/recompensas/ui/components/HeaderDashboard"
 import { useEffect } from "react"
 
 export const CursoUsuario = () => {
 
     useEffect(() => {
-        // Cuando el componente se monta, desplázate al principio de la página
         window.scrollTo(0, 0);
       }, []);
 
@@ -17,7 +13,7 @@ export const CursoUsuario = () => {
             <div className="flex flex-row">
                 <div className="basis-[25%] flex flex-col border-r-2 border-[#C3C3C3] h-[145vh]">
                     <div className="ml-10 mt-10">
-                        <img className="w-14" src={Logo}/>
+                        <img className="w-14" src="/Icon/IconLogin.svg"/>
                         <h2 className="text-5xl font-medium pt-8">Into GEAR</h2>
                         <h4 className="text-xl text-[#6F6F6F]">
                             <span className="font-semibold">Main</span>
@@ -32,13 +28,13 @@ export const CursoUsuario = () => {
                         </div>
                         <div className="flex items-center hover:border-b-2 hover:border-[#5257B3] w-[100px] cursor-pointer mt-20">
                             <h2 className="font-semibold pr-4">Recompensa</h2>
-                            <img src={Coin} />
+                            <img src="/Icon/Coin.svg" />
                             <h2 className="font-semibold pl-2">+500</h2>
                         </div>
                     </div>
                 </div>
                 <div className="basis-[75%] flex flex-col h-screen">
-                    <img src={FondoCurso}/>
+                    <img src="/Img/FondoCurso.png"/>
                     <div className="ml-10 mt-16">
                         <h1 className="text-6xl text-[#3E3E3E] pb-14">¿Por qué construimos <span className="font-semibold">Gear</span>?</h1>
                         <div className="overflow-y-scroll max-w-[120vh] max-h-[90vh]">

@@ -1,9 +1,9 @@
-import { Actividades } from "../Components/Actividades"
-import { Footer } from "../Components/Footer"
-import { HeaderDashBoard } from "../Components/HeaderDashboard"
-import { NavbarUsuario } from "../Components/NavbarUsuario"
-import { Progreso } from "../Components/Progreso"
-import { Recompensas } from "../Components/Recompensas"
+import { Footer } from "../shared/components/Footer"
+import { HeaderDashBoard } from "../features/recompensas/ui/components/HeaderDashboard"
+import { NavbarUsuario } from "../features/recompensas/ui/components/NavbarUsuario"
+import { Actividades } from "../shared/components/Actividades"
+import { Progreso } from "../shared/components/Progreso"
+import { Recompensas } from "../features/recompensas/ui/components/Recompensas"
 
 export const DashboardUser = () => {
 
