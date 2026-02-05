@@ -1,12 +1,7 @@
-import { AppRouter } from "./Router/AppRouter"
-
+import { AppRouter } from "./app/router/AppRouter"
 
 export const App = () => {
-  return (
-    <>
-      <AppRouter></AppRouter>
-    </>
-  )
+  return <AppRouter/>
 }
 
 

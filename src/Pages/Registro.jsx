@@ -1,11 +1,6 @@
-import { Footer } from "../Components/Footer"
-import Logo from '../assets/Icon/MainCoin.svg'
-import ImgRegistro from '../assets/Img/imgRegistro.png'
-import IconLogin from '../assets/Icon/IconLogin.svg'  
+import { Footer } from "../shared/components/Footer"
 import { useState } from 'react'
 import { Link } from "react-router-dom"
-import OcultarContraseña from '../assets/Icon/OcultarContraseña.svg'
-import MostrarContraseña from '../assets/Icon/MostrarContraseña.svg'
 
 export const Registro = () => {
 
@@ -28,17 +23,17 @@ export const Registro = () => {
         <div className="flex flex-row">
             <div className="basis-1/2 bg-[#000000] w-full h-screen">
                 <div className="flex flex-row justify-start pt-10 pl-10">
-                <img className="w-12" src={Logo} />
+                <img className="w-12" src="/Icon/MainCoin.svg" />
                         <h2 className='text-[#FFFFFF] font-semibold pl-4 pt-2'>Main</h2>
                         <h2 className='text-[#FFFFFF] font-light pt-2'>Coin</h2>
                 </div>
                 <div className="flex justify-center pt-20">
-                    <img src={ImgRegistro}/>
+                    <img src="/Img/imgRegistro.png"/>
                 </div>
             </div>
             <div className="basis-1/2 bg-[#FFFFFF] w-full h-screen">
                 <div className="flex flex-row justify-center mt-40">
-                    <img className="w-8" src={IconLogin} />
+                    <img className="w-8" src="/Icon/IconLogin.svg" />
                     <h2 className='text-[#000000] font-semibold pl-4'>Main</h2>
                     <h2 className='text-[#000000] font-light'>Coin</h2>
                 </div>
@@ -83,7 +78,7 @@ export const Registro = () => {
                             items-center cursor-pointer"
                             >
                             <img
-                            src={showPassword ? OcultarContraseña : MostrarContraseña}
+                            src={showPassword ? "/Icon/OcultarContraseña.svg" : "/Icon/MostrarContraseña.svg"}
                             alt={showPassword ? 'Ocultar Contraseña' : 'Mostrar Contraseña'}
                             className="w-5 h-5"
                             />
@@ -105,7 +100,7 @@ export const Registro = () => {
                             items-center cursor-pointer"
                             >
                             <img
-                            src={showPassword2 ? OcultarContraseña : MostrarContraseña}
+                            src={showPassword2 ? "/Icon/OcultarContraseña.svg" : "/Icon/MostrarContraseña.svg"}
                             alt={showPassword2 ? 'Ocultar Contraseña' : 'Mostrar Contraseña'}
                             className="w-5 h-5"
                             />
