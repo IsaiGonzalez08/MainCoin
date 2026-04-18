@@ -110,9 +110,9 @@ export const RegisterPage = () => {
                 </button>
 
                 <h2 className="mt-20">
-                    ¿No tienes cuenta aún?{' '}
-                    <Link className="font-bold" to="/register">
-                        Registrate aquí
+                    ¿Ya tienes cuenta?{' '}
+                    <Link className="font-bold" to="/login">
+                        Inicia sesión aquí
                     </Link>
                 </h2>
             </div>
