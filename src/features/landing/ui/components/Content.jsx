@@ -3,7 +3,7 @@ import { CardContenido } from './ContentCard'
 
 export const Content = () => {
     return (
-        <div className="bg-primary w-full px-5 py-10 lg:px-20" id="content">
+        <div className="bg-black w-full px-5 py-10 lg:px-20" id="content">
             <div className="flex flex-row">
                 <span className="text-[#FFFFFF] font-thin text-4xl lg:text-6xl">
                     Tops recompensas en los

@@ -25,11 +25,8 @@ export const RegisterPage = () => {
     }
 
     return (
-        <div className="flex flex-row h-screen">
-            <div className="hidden bg-black lg:flex justify-center items-center lg:w-1/2 p-10 h-full">
-                <img src="/Img/imgRegistro.png" />
-            </div>
-            <div className="w-full flex flex-col items-center justify-center bg-[#FFFFFF] px-5 lg:px-14 lg:w-1/2">
+        <div className="flex h-screen justify-center">
+            <div className="flex flex-col items-center justify-center bg-white">
                 <div className="flex flex-row">
                     <img className="w-8" src="/Icon/IconLogin.svg" />
                     <h2 className="text-[#000000] font-semibold pl-4">MainCoin</h2>

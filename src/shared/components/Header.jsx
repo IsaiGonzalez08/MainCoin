@@ -10,7 +10,7 @@ export const Header = () => {
     }
 
     return (
-        <header className="bg-primary flex flex-row justify-between w-full px-5 lg:px-20">
+        <header className="bg-black flex flex-row justify-between w-full px-5 lg:px-20">
             <NavLink to="/">
                 <img className="w-12 h-12" src="/Icon/MainCoin.svg" />
             </NavLink>

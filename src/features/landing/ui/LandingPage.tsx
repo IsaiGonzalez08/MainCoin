@@ -8,7 +8,7 @@ import { Footer } from '../../../shared/components/Footer'
 export const LandingPage = () => {
     return (
         <>
-            <div className="bg-primary w-full h-screen flex flex-col items-center py-10">
+            <div className="bg-black w-full h-screen flex flex-col items-center py-10">
                 <Header />
                 <InitSection />
             </div>

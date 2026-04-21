@@ -2,7 +2,7 @@ import { reasons } from "../data"
 
 export const AboutUs = () => {
     return (
-        <div className="bg-primary w-full flex flex-col items-center px-5 py-10 lg:px-20" id="about-us">
+        <div className="bg-black w-full flex flex-col items-center px-5 py-10 lg:px-20" id="about-us">
             <h2 className="text-5xl text-center lg:text-left">
                 <span className="text-[#FFFFFF] font-bold">¿Por qué Main</span>
                 <span className="text-[#FFFFFF] font-light">coin</span>

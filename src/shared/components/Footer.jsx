@@ -1,6 +1,6 @@
 export const Footer = () => {
     return (
-        <footer className="flex flex-col items-center justify-between py-5 w-full bg-primary lg:items-end lg:flex-row lg:px-20">
+        <footer className="flex flex-col items-center justify-between py-5 w-full bg-black lg:items-end lg:flex-row lg:px-20">
             <div className="flex flex-col lg:w-1/3">
                 <div className="flex flex-col items-center lg:gap-5 lg:flex-row">
                     <img src="/Icon/MainCoin.svg" />
