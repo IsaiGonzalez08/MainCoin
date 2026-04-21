@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import { ContentCard } from '../../domain/types/types';
 
-export const CardContenido = ({perfil, nombre, puntos, dinero}: ContentCard) => {
+export const CardContenido = ({perfil, nombre, puntos, dinero}: Omit<ContentCard, 'id'>) => {
     return(
         <div className="flex flex-row hover:scale-110 hover:duration-300">
             <img className='pt-5 pb-5' src={perfil} alt="" />
@@ -14,7 +14,7 @@ export const CardContenido = ({perfil, nombre, puntos, dinero}: ContentCard) => 
                     <img src="/Icon/Emerald.svg" />
                     <h2 className='text-white pr-2'>{puntos}</h2>
                     <div className="bg-white w-[1px] h-5"></div>
-                    <h2 className='text-white pl-2'>${dinero}</h2>
+                    <h2 className='text-white pl-2'>{dinero}</h2>
                 </div>
             </div>
         </div>
